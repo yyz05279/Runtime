@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:YYAuthcodeView.xcodeproj">
+      location = "self:Runtime.xcodeproj">
    </FileRef>
 </Workspace>

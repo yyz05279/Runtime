@@ -1,18 +1,18 @@
 //
-//  YYAuthcodeViewUITests.m
-//  YYAuthcodeViewUITests
+//  RuntimeUITests.m
+//  RuntimeUITests
 //
-//  Created by YZ Y on 17/4/19.
+//  Created by YZ Y on 17/3/8.
 //  Copyright © 2017年 YYZ. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface YYAuthcodeViewUITests : XCTestCase
+@interface RuntimeUITests : XCTestCase
 
 @end
 
-@implementation YYAuthcodeViewUITests
+@implementation RuntimeUITests
 
 - (void)setUp {
     [super setUp];

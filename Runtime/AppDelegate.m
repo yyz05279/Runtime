@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  YYAuthcodeView
+//  Runtime
 //
-//  Created by YZ Y on 17/4/19.
+//  Created by YZ Y on 17/3/8.
 //  Copyright © 2017年 YYZ. All rights reserved.
 //
 
@@ -17,11 +17,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
     _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     _window.backgroundColor = [UIColor whiteColor];
-    _window.rootViewController = [ViewController new];
+    _window.rootViewController = [[ViewController alloc] init];
     [_window makeKeyAndVisible];
+    
     return YES;
 }
 
@@ -63,7 +63,7 @@
     // The persistent container for the application. This implementation creates and returns a container, having loaded the store for the application to it.
     @synchronized (self) {
         if (_persistentContainer == nil) {
-            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"YYAuthcodeView"];
+            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"Runtime"];
             [_persistentContainer loadPersistentStoresWithCompletionHandler:^(NSPersistentStoreDescription *storeDescription, NSError *error) {
                 if (error != nil) {
                     // Replace this implementation with code to handle the error appropriately.
